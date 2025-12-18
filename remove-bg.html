@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Remove Background – DeSilhouette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Remove image background instantly with DeSilhouette. Choose between Precision Mode or Original Quality Mode. 100% Free to Use — No Login — No Watermark."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="ds-header">
+    <div class="ds-container ds-header-inner">
+      <div class="ds-logo">
+        <a href="index.html" class="ds-logo-mark"></a>
+        <a href="index.html" class="ds-logo-text">DeSilhouette</a>
+      </div>
+      <nav class="ds-nav">
+        <a href="index.html" class="ds-nav-item">Home</a>
+        <button class="ds-nav-item ds-nav-item--active" type="button">
+          Remove Background
+        </button>
+        <a href="about.html" class="ds-nav-item">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="ds-hero">
+      <div class="ds-container ds-hero-inner">
+        <div class="ds-hero-content">
+          <h1 class="ds-hero-title">
+            Remove Background Instantly,<br />
+            With Precision or Original Quality.
+          </h1>
+          <p class="ds-hero-subtitle">
+            Choose between <strong>Precision Mode</strong> for ultra‑clean cuts
+            or <strong>Original Quality Mode</strong> to preserve every pixel.
+          </p>
+          <p class="ds-hero-subtitle" style="margin-bottom: 16px; font-weight: 500;">
+            100% Free to Use — No Login — No Watermark.
+          </p>
+          <button class="ds-primary-btn" type="button" id="scroll-to-workspace">
+            Start Removing Background
+          </button>
+        </div>
+        <div class="ds-hero-visual">
+          <div class="ds-hero-orbit">
+            <div class="ds-hero-orbit-ring ds-hero-orbit-ring--1"></div>
+            <div class="ds-hero-orbit-ring ds-hero-orbit-ring--2"></div>
+            <div class="ds-hero-orbit-glow"></div>
+          </div>
+          <div class="ds-hero-card">
+            <span class="ds-hero-card-label">Background Removal</span>
+            <p>
+              Powered by dual modes tailored for real‑world photos and high‑fidelity design assets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSPACE -->
+    <section class="ds-workspace" id="workspace">
+      <div class="ds-container">
+        <div class="ds-section-header">
+          <h2>Background Removal Workspace</h2>
+          <p>
+            Select your preferred mode, upload your image, and let DeSilhouette handle the rest.
+          </p>
+        </div>
+
+        <!-- MODE SELECTOR -->
+        <div class="ds-mode-selector">
+          <button
+            class="ds-mode-card ds-mode-card--active""
+            type="button"
+            data-mode="originalQuality"
+          >
+            <div class="ds-mode-pill ds-mode-pill--original">Original Quality Mode</div>
+            <h3>Original Quality Mode</h3>
+            <p>
+              Ideal for designs, logos, and illustrations. Preserves original image quality with
+              minimal processing on edges.
+            </p>
+          </button>
+
+          <button
+            class="ds-mode-card"
+            type="button"
+            data-mode="precision"
+          >
+            <div class="ds-mode-pill ds-mode-pill--precision">Precision Mode</div>
+            <h3>Precision Mode</h3>
+            <p>
+              Best for real‑world photos and portraits. Produces the cleanest, most detailed cutouts,
+              with a slight trade‑off in final image quality.
+            </p>
+          </button>
+
+          
+        </div>
+
+        <!-- UPLOAD + PREVIEW -->
+        <div class="ds-grid">
+          <!-- Upload card -->
+          <div class="ds-card ds-upload-card" id="upload-card">
+            <input
+              type="file"
+              id="file-input"
+              accept="image/*"
+              class="ds-upload-input"
+            />
+            <div class="ds-upload-inner" id="upload-inner">
+              <div class="ds-upload-icon"></div>
+              <p class="ds-upload-title">Drop your image here</p>
+              <p class="ds-upload-subtitle">or click to browse from your device</p>
+              <span class="ds-upload-format">Supported: JPG, PNG, WEBP</span>
+            </div>
+            <div class="ds-upload-loading" id="upload-loading">
+              <div class="ds-spinner"></div>
+              <p>Processing your image…</p>
+            </div>
+          </div>
+
+          <!-- Preview card -->
+          <div class="ds-card ds-preview-card">
+            <div class="ds-preview-header">
+              <span>Preview</span>
+              <span class="ds-preview-mode-label" id="preview-mode-label">
+                Precision Mode
+              </span>
+            </div>
+            <div class="ds-preview-body" id="preview-body">
+              <div class="ds-preview-placeholder" id="preview-placeholder">
+                <p>Upload an image to see the result here.</p>
+              </div>
+              <div class="ds-preview-images" id="preview-images">
+                <div class="ds-preview-column">
+                  <span class="ds-preview-label">Original</span>
+                  <img id="preview-original" alt="Original image preview" />
+                </div>
+                <div class="ds-preview-column">
+                  <span class="ds-preview-label">Result</span>
+                  <img id="preview-result" alt="Result image preview" />
+                </div>
+              </div>
+            </div>
+            <div class="ds-preview-footer">
+              <button
+                class="ds-secondary-btn"
+                type="button"
+                id="reset-btn"
+                disabled
+              >
+                Reset
+              </button>
+              <button
+                class="ds-primary-btn ds-primary-btn--subtle"
+                type="button"
+                id="download-btn"
+                disabled
+              >
+                Download Result
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info note -->
+        <div class="ds-note">
+          <p>
+            DeSilhouette is designed as a modern multimedia editing platform.
+            Background removal is just the first step—this interface is built to
+            scale for future image, audio, and AI‑powered tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE SECTION -->
+    <section class="ds-donate">
+      <div class="ds-container ds-donate-inner">
+        <h3>Support DeSilhouette</h3>
+        <p>
+          If you find this platform helpful, you can support its development through Saweria.
+          Your contribution helps keep DeSilhouette growing with more multimedia tools.
+        </p>
+
+        <div class="ds-donate-card">
+          <img src="assets/saweria-qr.png" alt="Saweria QR" class="ds-donate-qr" />
+          <a
+            href="https://saweria.co/falstworks"
+            target="_blank"
+            class="ds-primary-btn ds-donate-btn"
+          >
+            Donate via Saweria
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ds-footer">
+    <div class="ds-container ds-footer-inner">
+      <span>© <span id="year"></span> DeSilhouette. All rights reserved.</span>
+      <span class="ds-footer-tagline">Built for modern multimedia workflows.</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

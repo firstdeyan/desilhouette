@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – DeSilhouette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="ds-header">
+    <div class="ds-container ds-header-inner">
+      <div class="ds-logo">
+        <a href="index.html" class="ds-logo-mark"></a>
+        <a href="index.html" class="ds-logo-text">DeSilhouette</a>
+      </div>
+      <nav class="ds-nav">
+        <a href="index.html" class="ds-nav-item">Home</a>
+        <a href="remove-bg.html" class="ds-nav-item">Remove Background</a>
+        <button class="ds-nav-item ds-nav-item--active" type="button">
+          About
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- MINI HERO -->
+    <section class="ds-mini-hero">
+      <div class="ds-container">
+        <h1 class="ds-mini-hero-title">About DeSilhouette</h1>
+        <p class="ds-mini-hero-subtitle">
+          A modern multimedia editing platform built for creators, educators, and professionals.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="ds-about">
+      <div class="ds-container ds-about-inner">
+        <h2>What is DeSilhouette?</h2>
+        <p>
+          DeSilhouette is a modern multimedia editing platform designed to simplify creative workflows.
+          Starting with background removal, the platform is built to scale into a full suite of tools
+          for image enhancement, audio processing, intelligent effects, and more.
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+          We aim to provide accessible, high‑quality editing tools that empower users to create
+          professional‑grade content without complicated software. DeSilhouette is crafted with
+          modern UI/UX principles, ensuring a smooth, elegant, and intuitive experience.
+        </p>
+
+        <h2>Why DeSilhouette Exists</h2>
+        <p>
+          Many creators struggle with tools that are either too complex or too limited. DeSilhouette
+          bridges that gap by offering powerful features in a clean, futuristic interface that works
+          directly in your browser.
+        </p>
+        <p>
+          The platform is built with a simple promise:
+          <strong>100% Free to Use — No Login — No Watermark</strong>, so you can focus on your work
+          instead of worrying about access or limitations.
+        </p>
+
+        <h2>Future Features</h2>
+        <ul class="ds-about-list">
+          <li>Background color replacement</li>
+          <li>Photo enhancement</li>
+          <li>AI‑powered image effects</li>
+          <li>Audio enhancement</li>
+          <li>Text‑to‑speech</li>
+          <li>Image‑to‑text</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DONATE SECTION -->
+    <section class="ds-donate">
+      <div class="ds-container ds-donate-inner">
+        <h3>Support DeSilhouette</h3>
+        <p>
+          If you appreciate this project, consider supporting its development through Saweria.
+          Your support helps us build more tools for the creative community.
+        </p>
+
+        <div class="ds-donate-card">
+          <img src="assets/saweria-qr.png" alt="Saweria QR" class="ds-donate-qr" />
+          <a
+            href="https://saweria.co/falstworks"
+            target="_blank"
+            class="ds-primary-btn ds-donate-btn"
+          >
+            Donate via Saweria
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ds-footer">
+    <div class="ds-container ds-footer-inner">
+      <span>© <span id="year"></span> DeSilhouette. All rights reserved.</span>
+      <span class="ds-footer-tagline">Built for modern multimedia workflows.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DeSilhouette – Modern Multimedia Editing Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="DeSilhouette – a modern multimedia editing platform, starting with free background removal. 100% Free to Use — No Login — No Watermark."
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="ds-header">
+    <div class="ds-container ds-header-inner">
+      <div class="ds-logo">
+        <a href="index.html" class="ds-logo-mark"></a>
+        <a href="index.html" class="ds-logo-text">DeSilhouette</a>
+      </div>
+      <nav class="ds-nav">
+        <button class="ds-nav-item ds-nav-item--active" type="button">
+          Home
+        </button>
+        <a href="remove-bg.html" class="ds-nav-item">Remove Background</a>
+        <a href="about.html" class="ds-nav-item">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / HOME -->
+    <section class="ds-hero">
+      <div class="ds-container ds-hero-inner">
+        <div class="ds-hero-content">
+          <h1 class="ds-hero-title">
+            A Modern Multimedia Editing Platform,<br />
+            Starting with Background Removal.
+          </h1>
+          <p class="ds-hero-subtitle">
+            DeSilhouette is built for creators, educators, and professionals who need clean, modern tools
+            that just work in the browser.
+          </p>
+          <p class="ds-hero-subtitle" style="margin-bottom: 16px; font-weight: 500;">
+            100% Free to Use — No Login — No Watermark.
+          </p>
+          <a href="remove-bg.html" class="ds-primary-btn">
+            Start Removing Background
+          </a>
+        </div>
+        <div class="ds-hero-visual">
+          <div class="ds-hero-orbit">
+            <div class="ds-hero-orbit-ring ds-hero-orbit-ring--1"></div>
+            <div class="ds-hero-orbit-ring ds-hero-orbit-ring--2"></div>
+            <div class="ds-hero-orbit-glow"></div>
+          </div>
+          <div class="ds-hero-card">
+            <span class="ds-hero-card-label">Multimedia Platform</span>
+            <p>
+              DeSilhouette is engineered to grow beyond background removal — towards image, audio,
+              and intelligent AI‑assisted tools.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHORT INTRO -->
+    <section class="ds-workspace">
+      <div class="ds-container">
+        <div class="ds-section-header">
+          <h2>Why DeSilhouette?</h2>
+          <p>
+            Built with a clean, futuristic interface and a scalable architecture, DeSilhouette is
+            designed to become a central hub for your multimedia editing workflows.
+          </p>
+        </div>
+        <div class="ds-note">
+          <p>
+            Start with background removal today — and stay tuned as DeSilhouette evolves into a broader
+            platform for photo enhancement, effects, audio processing, and intelligent tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE SECTION -->
+    <section class="ds-donate">
+      <div class="ds-container ds-donate-inner">
+        <h3>Support DeSilhouette</h3>
+        <p>
+          If you find this platform helpful, you can support its development through Saweria.
+          Your contribution helps keep DeSilhouette growing with more multimedia tools.
+        </p>
+
+        <div class="ds-donate-card">
+          <img src="assets/saweria-qr.png" alt="Saweria QR" class="ds-donate-qr" />
+          <a
+            href="https://saweria.co/falstworks"
+            target="_blank"
+            class="ds-primary-btn ds-donate-btn"
+          >
+            Donate via Saweria
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ds-footer">
+    <div class="ds-container ds-footer-inner">
+      <span>© <span id="year"></span> DeSilhouette. All rights reserved.</span>
+      <span class="ds-footer-tagline">Built for modern multimedia workflows.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
